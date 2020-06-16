@@ -1,0 +1,26 @@
+{
+  "name": "infisens",
+  "version": "1.0.0",
+  "description": "proyecto de infisens",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruben211/infisens.git"
+  },
+  "keywords": [
+    "infisens"
+  ],
+  "author": "ruben garcía peris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruben211/infisens/issues"
+  },
+  "homepage": "https://github.com/ruben211/infisens#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4"
+  }
+}
