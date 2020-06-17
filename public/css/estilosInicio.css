@@ -1,0 +1,49 @@
+header {
+	background-color: lightblue;
+	margin: 3px;
+	padding: 30px;
+}
+
+aside {
+	background-color: lightblue;
+	border: 50px;
+	margin-right: 100px;
+	padding: 50px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#editar {
+	float: left;
+}
+
+#informacion {
+	float: right;
+}
+
+#acceso {
+	clear: right;
+	text-align: center;
+}
+
+#generalidades {
+	float: right;
+}
+
+aside {float:left;width:20%}
+
+#menu{
+	clear:right;
+	margin-left: 245px;
+	padding: 100px;
+	border: 80px;
+	background-color: lightblue;
+}
+
+#info {
+	font-size: 20px;
+	background-color: lightyellow;
+	text-align: justify;
+}
