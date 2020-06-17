@@ -44,6 +44,9 @@ aside {float:left;width:20%}
 
 #info {
 	font-size: 20px;
-	background-color: lightyellow;
 	text-align: justify;
+}
+
+.titulo {
+	color: red;
 }
