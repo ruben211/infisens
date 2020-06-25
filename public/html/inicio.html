@@ -5,23 +5,15 @@
 	<title>Bienvenido a infisens</title>
 	<link rel="stylesheet" type="text/css" href="css/estilosInicio.css">
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script src="jquery-ui.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
 	<script>
 		function inicio (argument) {
-			$("").draggable({
+			$(".imagenes").draggable({
 				appeandTo:'body',
-				helper:'clone'
 			})
 			$("#items").droppable({
 				activeClass:'claseactiva',
 				hoverClass:'clasesobre',
-				drop: function (event,ui) {
-					var src=ui.draggable.find('img').attr('src');
-					var h2=ui.draggable.find('h2').text();
-					var todo='<li><img src="'+src'" width="30px" height="30px">'
-					todo= todo + '<h2>' +h2+ '<h2></li>'
-					$(this).find('ul').append(todo);
-				}
 			});
 		}
 		$(document).on('ready', inicio);
@@ -35,13 +27,26 @@
 		<button id="generalidades">GENERALIDADES</button>
 		<a href="/info"><button id="informacion">INFORMACION APLICACION</button></a>
 	</header>
-	<aside>
+	<div id="lista">
+		<div class="imagenes">
+			<img src="./nublado.png">
+			<center><h2>Nublado</h2></center>
+		</div>
+	</div>
+
+	<div id="items">
+		<center><h3>Arrastra tus archivos aqui</h3></center>
+		<ul id="miLista">
+
+		</ul>
+	</div>
+	<!-- <aside>
 		<li><a href="#">PANTALLA 1</a></li>
 			<li><a href="#">PANTALLA 2</a></li>
 			<li><a href="#">PANTALLA 3</a></li>
 			<li><a href="#">PANTALLA 4</a></li>
 			<li><a href="#">PANTALLA 5</a></li>
-	</aside>
+	</aside> -->
 		<div id="menu">
 		<ul id="menu_principal">
 			<button>CARGAR PLANO</button>
