@@ -4,7 +4,28 @@
 	<meta charset="UTF-8">
 	<title>Bienvenido a infisens</title>
 	<link rel="stylesheet" type="text/css" href="css/estilosInicio.css">
-	<script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="jquery-ui.js"></script>
+	<script>
+		function inicio (argument) {
+			$("").draggable({
+				appeandTo:'body',
+				helper:'clone'
+			})
+			$("#items").droppable({
+				activeClass:'claseactiva',
+				hoverClass:'clasesobre',
+				drop: function (event,ui) {
+					var src=ui.draggable.find('img').attr('src');
+					var h2=ui.draggable.find('h2').text();
+					var todo='<li><img src="'+src'" width="30px" height="30px">'
+					todo= todo + '<h2>' +h2+ '<h2></li>'
+					$(this).find('ul').append(todo);
+				}
+			});
+		}
+		$(document).on('ready', inicio);
+	</script>
 </head>
 <body>
 	<header>

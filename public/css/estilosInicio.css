@@ -50,3 +50,11 @@ aside {float:left;width:20%}
 .titulo {
 	color: red;
 }
+
+.claseactiva {
+	background-color: #CCC;
+}
+
+.clasesobre {
+	background-color: red;
+}
