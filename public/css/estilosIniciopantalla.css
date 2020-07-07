@@ -1,0 +1,87 @@
+aside {
+	background-color: black;
+	border: 50px;
+	margin-right: 100px;
+	padding: 50px;
+}
+
+h1 {
+	text-align: center;
+}
+
+#editar {
+	float: left;
+}
+
+#informacion {
+	float: right;
+}
+
+#acceso {
+	clear: right;
+	text-align: center;
+}
+
+#generalidades {
+	float: right;
+}
+
+aside {float:left;width:20%}
+
+#menu{
+	clear:right;
+	margin-left: 245px;
+	padding: 100px;
+	border: 80px;
+	background-color: black;
+}
+
+#info {
+	font-size: 20px;
+	text-align: justify;
+}
+
+.titulo {
+	color: red;
+}
+
+/*.claseactiva {
+	background-color: #CCC;
+}
+
+.clasesobre {
+	background-color: red;
+}
+*/
+.imagenes {
+	border-radius: 4px;
+	border:1px solid white;
+	display: inline-block;
+	vertical-align: top;
+	height: 150px;
+	width: 100px;
+}
+
+.imagenes img {
+	height: 60%;
+	margin-left: 10%;
+	width: 80%;
+	cursor: move;
+}
+
+#items {
+	width: 39%;
+	height: 500px;
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;
+	height: 60px;
+}
+
+body {
+	background-image: url("../colores.jpg")
+}

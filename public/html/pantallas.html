@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Bienvenido a infisens</title>
-	<link rel="stylesheet" type="text/css" href="css/estilosInicio.css">
+	<link rel="stylesheet" type="text/css" href="css/estilosIniciopantalla.css">
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
 	<script>
@@ -20,53 +20,26 @@
 	</script>
 	<script>
 
-        function mostrar(id)
+   function change() 
+   {
+    var elem = document.getElementById("myButton1");
+    if (elem.value=="humedad") elem.value = prompt("cambiar a");
+    else elem.value = prompt("cambiar a");
+}
 
-        {
+  function change2() 
+   {
+    var elem = document.getElementById("myButton2");
+    if (elem.value=="nublado") elem.value = prompt("cambiar a");
+    else elem.value = prompt("cambiar a");
+}
 
-            var objeto=document.getElementById(id)
-
-            if(objeto.style.display=="block")
-
-                objeto.style.display="none";
-
-            else
-
-                objeto.style.display="block";
-
-        }
-
-        function mostrardos(id)
-
-        {
-
-            var objeto2=document.getElementById(id)
-
-            if(objeto2.style.display=="block")
-
-                objeto2.style.display="none";
-
-            else
-
-                objeto2.style.display="block";
-
-		}
-
-		function mostrartres(id)
-
-        {
-
-            var objeto3=document.getElementById(id)
-
-            if(objeto3.style.display=="block")
-
-                objeto3.style.display="none";
-
-            else
-
-                objeto3.style.display="block";
-
-		}
+  function change3() 
+   {
+    var elem = document.getElementById("myButton3");
+    if (elem.value=="lluvia") elem.value = prompt("cambiar a");
+    else elem.value = prompt("cambiar a");
+}
 
     </script>
     <style>
@@ -82,19 +55,23 @@
 	<div id="lista">
 		<div class="imagenes">
 			<img src="./nublado.png">
-			<input type="button" onclick="mostrartres('contenido5')" value="nublado">
+			<input onclick="change2()" type="button" value="nublado" id="myButton2"></input>
+			<input onclick="change2()" type="button" value="cambiar nombre" id="myButton2"></input>
 		</div>
 	</div>
 	<div id="lista">
 		<div class="imagenes">
 			<img src="./humedad.jpg">
-			<input type="button" onclick="mostrar('contenido1')" value="humedad">
+			<input onclick="change()" type="button" value="humedad" id="myButton1"></input>
+			<input onclick="change()" type="button" value="cambiar nombre" id="myButton1"></input>
 		</div>
 	</div>
 	<div id="lista">
 		<div class="imagenes">
 			<img src="./lluvia.jpg">
-			<input type="button" onclick="mostrardos('contenido3')" value="lluvia">
+			<input onclick="change3()" type="button" value="lluvia" id="myButton3"></input>
+			<input onclick="change3()" type="button" value="cambiar nombre" id="myButton3"></input>
+
 		</div>
 	</div>
 </aside>
