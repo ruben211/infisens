@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Bienvenido a infisens</title>
+	<link rel="stylesheet" type="text/css" href="css/estilosInicio.css">
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+	<script>
+		function inicio (argument) {
+			$(".imagenes").draggable({
+				appeandTo:'body',
+			})
+			$("#items").droppable({
+				activeClass:'claseactiva',
+				hoverClass:'clasesobre',
+			});
+		}
+		$(document).on('ready', inicio);
+	</script>
+	<script>
+
+        function mostrar(id)
+
+        {
+
+            var objeto=document.getElementById(id)
+
+            if(objeto.style.display=="block")
+
+                objeto.style.display="none";
+
+            else
+
+                objeto.style.display="block";
+
+        }
+
+        function mostrardos(id)
+
+        {
+
+            var objeto2=document.getElementById(id)
+
+            if(objeto2.style.display=="block")
+
+                objeto2.style.display="none";
+
+            else
+
+                objeto2.style.display="block";
+
+		}
+
+		function mostrartres(id)
+
+        {
+
+            var objeto3=document.getElementById(id)
+
+            if(objeto3.style.display=="block")
+
+                objeto3.style.display="none";
+
+            else
+
+                objeto3.style.display="block";
+
+		}
+
+    </script>
+    <style>
+
+        .oculto {display:none;}
+
+    </style>
+</head>
+<body>
+	<a href="/"><button>Volver al inicio</button></a>
+	<h1>Bienvenido al menu de las pantallas</h1>
+	<aside>
+	<div id="lista">
+		<div class="imagenes">
+			<img src="./nublado.png">
+			<input type="button" onclick="mostrartres('contenido5')" value="nublado">
+		</div>
+	</div>
+	<div id="lista">
+		<div class="imagenes">
+			<img src="./humedad.jpg">
+			<input type="button" onclick="mostrar('contenido1')" value="humedad">
+		</div>
+	</div>
+	<div id="lista">
+		<div class="imagenes">
+			<img src="./lluvia.jpg">
+			<input type="button" onclick="mostrardos('contenido3')" value="lluvia">
+		</div>
+	</div>
+</aside>
+
+<!-- 	<div id="items">
+		<center><h3>Arrastra tus archivos aqui</h3></center>
+		<ul id="miLista">
+
+		</ul>
+	</div> -->
+	<!-- <aside>
+		<li><a href="#">PANTALLA 1</a></li>
+			<li><a href="#">PANTALLA 2</a></li>
+			<li><a href="#">PANTALLA 3</a></li>
+			<li><a href="#">PANTALLA 4</a></li>
+			<li><a href="#">PANTALLA 5</a></li>
+	</aside> -->
+		<div id="menu">
+		<ul id="menu_principal">
+			<form>
+		<img src="./grafica.jpg" class="oculto" id="contenido1" width=800>
+		<img src="./grafica.jpg" class="oculto" id="contenido2" width=800>
+			</form>
+			<form>
+		<img src="./planolluvia.gif" class="oculto" id="contenido3" width=800>
+		<img src="./planolluvia.gif" class="oculto" id="contenido4" width=800>
+			</form>
+			<form>
+		<img src="./planonublado.jpeg" class="oculto" id="contenido5" width=800>
+		<img src="./planonublado.jpeg" class="oculto" id="contenido6" width=800>
+			</form>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

@@ -18,12 +18,69 @@
 		}
 		$(document).on('ready', inicio);
 	</script>
+<script>
+
+        function mostrar(id)
+
+        {
+
+            var objeto=document.getElementById(id)
+
+            if(objeto.style.display=="block")
+
+                objeto.style.display="none";
+
+            else
+
+                objeto.style.display="block";
+
+        }
+
+        function mostrardos(id)
+
+        {
+
+            var objeto2=document.getElementById(id)
+
+            if(objeto2.style.display=="block")
+
+                objeto2.style.display="none";
+
+            else
+
+                objeto2.style.display="block";
+
+		}
+
+		function mostrartres(id)
+
+        {
+
+            var objeto3=document.getElementById(id)
+
+            if(objeto3.style.display=="block")
+
+                objeto3.style.display="none";
+
+            else
+
+                objeto3.style.display="block";
+
+		}
+
+    </script>
+
+    <style>
+
+        .oculto {display:none;}
+
+    </style>
 </head>
 <body>
 	<header>
 		<h1>Bienvenidos a la aplicación de infinisens</h1>
 		<button id="editar">EDITAR</button>
-		<a href="#aside"><button id="acceso">ACCESO PANTALLAS</button></a>
+		<a href="/pantallas"><button id="acceso">ACCESO PANTALLAS</button></a>
 		<button id="generalidades">GENERALIDADES</button>
 		<a href="/info"><button id="informacion">INFORMACION APLICACION</button></a>
 	</header>
@@ -31,19 +88,19 @@
 	<div id="lista">
 		<div class="imagenes">
 			<img src="./nublado.png">
-			<center><h2>Nublado</h2></center>
+			<input type="button" onclick="mostrartres('contenido5')" value="nublado">
 		</div>
 	</div>
 	<div id="lista">
 		<div class="imagenes">
 			<img src="./humedad.jpg">
-			<center><h2>Humedad</h2></center>
+			<input type="button" onclick="mostrar('contenido1')" value="humedad">
 		</div>
 	</div>
 	<div id="lista">
 		<div class="imagenes">
 			<img src="./lluvia.jpg">
-			<center><h2>Humedad</h2></center>
+			<input type="button" onclick="mostrardos('contenido3')" value="lluvia">
 		</div>
 	</div>
 </aside>
@@ -63,7 +120,18 @@
 	</aside> -->
 		<div id="menu">
 		<ul id="menu_principal">
-			<button>CARGAR PLANO</button>
+			<form>
+		<img src="./grafica.jpg" class="oculto" id="contenido1" width=800>
+		<img src="./grafica.jpg" class="oculto" id="contenido2" width=800>
+			</form>
+			<form>
+		<img src="./planolluvia.gif" class="oculto" id="contenido3" width=800>
+		<img src="./planolluvia.gif" class="oculto" id="contenido4" width=800>
+			</form>
+			<form>
+		<img src="./planonublado.jpeg" class="oculto" id="contenido5" width=800>
+		<img src="./planonublado.jpeg" class="oculto" id="contenido6" width=800>
+			</form>
 		</ul>
 		<div class="clear"></div>
 	</div>
