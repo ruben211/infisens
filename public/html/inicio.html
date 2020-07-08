@@ -4,8 +4,19 @@
 	<meta charset="UTF-8">
 	<title>Bienvenido a infisens</title>
 	<link rel="stylesheet" type="text/css" href="css/estilosInicio.css">
+	<!-- <script type="text/javascript" src="./js/inicio.js" async></script> -->
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+	<script>
+function mostrarFecha() {
+	var parrafo = document.createElement("p");
+	var contenido = document.createTextNode("30/11/1874");
+	parrafo.appendChild(contenido);
+	document.body.insertBefore(parrafo, this);
+}
+
+document.getElementById("nacimiento").addEventListener("click", mostrarFecha)
+	</script>
 	<script>
 		function inicio (argument) {
 			$(".imagenes").draggable({
@@ -69,7 +80,6 @@
 		}
 
     </script>
-
     <style>
 
         .oculto {display:none;}
@@ -78,6 +88,7 @@
 </head>
 <body>
 	<header>
+		<button id="nacimiento">Nacimiento</button>
 		<h1>Bienvenidos a la aplicación de infinisens</h1>
 		<button id="editar">EDITAR</button>
 		<a href="/pantallas"><button id="acceso">ACCESO PANTALLAS</button></a>
