@@ -8,14 +8,17 @@
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
 	<script>
-function mostrarFecha() {
-	var parrafo = document.createElement("p");
-	var contenido = document.createTextNode("30/11/1874");
-	parrafo.appendChild(contenido);
-	document.body.insertBefore(parrafo, this);
+function nuevoIcono() {
+	var parrafo = document.createElement("IMG")
+	parrafo.setAttribute("src", "./lluvia.jpg")
+	parrafo.setAttribute("width", "100")
+	document.body.appendChild(parrafo);
+	var parrafo2 = document.createElement("button");
+	var contenido2 = document.createTextNode(prompt("que nombre quieres insertar?"));
+	parrafo2.appendChild(contenido2);
+	document.body.insertBefore(parrafo2, null);
 }
 
-document.getElementById("nacimiento").addEventListener("click", mostrarFecha)
 	</script>
 	<script>
 		function inicio (argument) {
@@ -88,7 +91,6 @@ document.getElementById("nacimiento").addEventListener("click", mostrarFecha)
 </head>
 <body>
 	<header>
-		<button id="nacimiento">Nacimiento</button>
 		<h1>Bienvenidos a la aplicación de infinisens</h1>
 		<button id="editar">EDITAR</button>
 		<a href="/pantallas"><button id="acceso">ACCESO PANTALLAS</button></a>
@@ -96,6 +98,8 @@ document.getElementById("nacimiento").addEventListener("click", mostrarFecha)
 		<a href="/info"><button id="informacion">INFORMACION APLICACION</button></a>
 	</header>
 	<aside>
+	<button id="icono" onclick="nuevoIcono()">Insertar nuevo icono</button>
+	<hr>
 	<div id="lista">
 		<div class="imagenes">
 			<img src="./nublado.png">
