@@ -9,14 +9,14 @@
 	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
 	<script>
 function nuevoIcono() {
-	var parrafo = document.createElement("IMG")
-	parrafo.setAttribute("src", "./lluvia.jpg")
-	parrafo.setAttribute("width", "100")
-	document.body.appendChild(parrafo);
+	var parrafo = document.createElement("img")
+	parrafo.setAttribute("src", "./nublado.png")
+	parrafo.setAttribute("width", "90")
+	document.getElementById("nuevosIconos").appendChild(parrafo);
 	var parrafo2 = document.createElement("button");
 	var contenido2 = document.createTextNode(prompt("que nombre quieres insertar?"));
 	parrafo2.appendChild(contenido2);
-	document.body.insertBefore(parrafo2, null);
+	document.getElementById("nuevosIconos").appendChild(parrafo2);
 }
 
 	</script>
@@ -113,21 +113,13 @@ function nuevoIcono() {
 			<input type="button" onclick="mostrardos('contenido3')" value="lluvia">
 		</div>
 	</div>
-</aside>
+	<div class="imagenes">
+		<div id="nuevosIconos">
+		</div>
+	</div>
 
-<!-- 	<div id="items">
-		<center><h3>Arrastra tus archivos aqui</h3></center>
-		<ul id="miLista">
+	</aside>
 
-		</ul>
-	</div> -->
-	<!-- <aside>
-		<li><a href="#">PANTALLA 1</a></li>
-			<li><a href="#">PANTALLA 2</a></li>
-			<li><a href="#">PANTALLA 3</a></li>
-			<li><a href="#">PANTALLA 4</a></li>
-			<li><a href="#">PANTALLA 5</a></li>
-	</aside> -->
 		<div id="menu">
 		<ul id="menu_principal">
 			<form>
@@ -145,5 +137,6 @@ function nuevoIcono() {
 		</ul>
 		<div class="clear"></div>
 	</div>
+
 </body>
 </html>
