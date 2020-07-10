@@ -69,10 +69,10 @@ aside {float:left;width:20%}
 	cursor: move;
 }
 
-#items {
+/*#items {
 	width: 39%;
 	height: 500px;
-}
+}*/
 
 ul li {
 	list-style: none;

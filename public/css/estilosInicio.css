@@ -51,14 +51,6 @@ aside {float:left;width:20%}
 	color: red;
 }
 
-/*.claseactiva {
-	background-color: #CCC;
-}
-
-.clasesobre {
-	background-color: red;
-}
-*/
 .imagenes {
 	border-radius: 4px;
 	border:1px solid white;
@@ -75,10 +67,6 @@ aside {float:left;width:20%}
 	cursor: move;
 }
 
-#items {
-	width: 39%;
-	height: 500px;
-}
 
 ul li {
 	list-style: none;

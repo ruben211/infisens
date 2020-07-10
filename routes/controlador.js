@@ -9,4 +9,6 @@ controlador.get("/info", handlers_ln.info);
 
 controlador.get("/pantallas", handlers_ln.pantallas);
 
+controlador.get("/dragandrop", handlers_ln.dragandrop);
+
 module.exports = controlador;

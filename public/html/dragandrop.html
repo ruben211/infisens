@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+	<title>Bienvenido a infisens</title>
+	<link rel="stylesheet" type="text/css" href="css/estilosInicio.css">
+</head>
+<body>
+	<header>
+		<h1>Bienvenidos a la aplicación de infinisens</h1>
+		<a href="/pantallas"><button id="acceso">ACCESO PANTALLAS</button></a>
+		<a href="/dragandrop"><button id="generalidades">FUNCION DRAG AND DROP</button></a>
+		<a href="/info"><button id="informacion">INFORMACION APLICACION</button></a>
+	</header>
+	<a href="/"><button>Volver al inicio</button></a>
+	<h1 class="titulo">¿COMO USAR LA FUNCIONALIDAD DRAG AND DROP?</h1>
+	<p id="info">Primero de todo necesitamos las siguientes librerias:
+	<br>
+	1- http://code.jquery.com/jquery-1.9.1.min.js
+	<br>
+	2- http://code.jquery.com/ui/1.10.1/jquery-ui.js
+	<br>
+	<br>
+	<br>
+	<br>
+	Lo siguiente es crear la funcion en si que nos permita arrastrar y llevar donde queramos
+	<p>
+		function inicio (argument) {
+		<br>
+			$(".imagenes").draggable({
+		<br>
+				appeandTo:'body',
+		<br>
+			})
+		<br>
+		}
+		<br>
+		$(document).on('ready', inicio);
+		<br>
+	</p>
+	Como vemos en la función, con draggable nos permite arrastrar y al poner appeandTo:'body' nos permite desplazarlo donde queramos del cuerpo, diciendo que seleccionamos la clase imagenes que es lo que queremos mover
+
+</body>
+</html>
